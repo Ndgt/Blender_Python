@@ -26,7 +26,7 @@
 
     Choose the version of your blender after "**Blender: Start**".
 
-    ![alt text](image.png)
+    ![alt text](/images/image.png)
 
 
 5. Write a script & Run the script
