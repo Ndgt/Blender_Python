@@ -8,3 +8,7 @@ wheels/
 
 # venv
 .venv
+
+# documents
+blender_python_reference_4_3/
+blender-developer-docs/
