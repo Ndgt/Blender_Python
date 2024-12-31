@@ -24,14 +24,14 @@
 
 4. Run Blender from vscode
 
-    Choose the version of your blender after "Blender: Start".
+    Choose the version of your blender after "**Blender: Start**".
 
-    ![alt text](/images/image.png)
+    ![alt text](image.png)
 
 
 5. Write a script & Run the script
 
-    Select "Blender: Run Script".
+    Select "**Blender: Run Script**".
 
 <br>
 
