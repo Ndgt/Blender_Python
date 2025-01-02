@@ -1,3 +1,44 @@
+## Remarks
+- new data-blocks in the bpy API cannot be created by calling the class
+
+    ```python
+    bpy.types.Mesh()
+    Traceback (most recent call last):
+    File "<blender_console>", line 1, in <module>
+    TypeError: bpy_struct.__new__(type): expected a single argument
+    ```
+
+<br>
+
+## `bpy.context`
+**Context :** Follow users object control
+
+`active_object` returns the last selected object.
+
+```python
+print(bpy.context.active_object)
+
+'''
+>>>
+<bpy_struct, Object("cloth") at 0x000002CFEEA94A00>
+'''
+```
+
+Use `selected_objects` to collect all objects selectd.
+
+```python
+objs = bpy.context.selected_objects
+print(type(objs))
+print(objs)
+
+'''
+>>>
+<class 'list'>
+[bpy.data.objects['cloth'], bpy.data.objects['立方体']]
+'''
+```
+
+<br>
 
 ## `bpy.data`
 Access to blender internal data
