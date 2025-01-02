@@ -1,5 +1,6 @@
 
 ## `bpy.data`
+Access to blender internal data
 
 ![alt text](/src/memo_images/image.png)
 
@@ -38,6 +39,24 @@ Object Name / Type
  Camera          / CAMERA
  Cube            / MESH
  Light           / LIGHT
+'''
+```
+
+`get(str)` returns the object, `find(str)` returns the index if it found.
+
+```python
+face_mesh = bpy.data.objects.get("Face")
+print(face_mesh.name)
+
+face_index = bpy.data.objects.find("Face")
+print(face_index)
+print(bpy.data.objects[face_index].name)
+
+'''
+>>>
+Face
+8
+Face
 '''
 ```
 
