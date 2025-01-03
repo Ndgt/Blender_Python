@@ -35,7 +35,27 @@
 
 <br>
 
-## Building Manual
+## Download API Document
+https://docs.blender.org/api/current/blender_python_reference_4_3.zip
+
+<br>
+
+## Open API Docs with module
+In *.venv/Lib/site-packages*, create the following ***document.py***.
+
+```python
+import webbrowser
+
+html_file_path = <path/to/blender_python_reference_4_3/index.html>
+webbrowser.open(html_file_path)
+```
+
+We can run this module by `python -m document` after the venv activated.
+
+<br>
+
+## Building Other Documents
+### Blender Manual
 1. Clone the repository
 
     ```bash
@@ -58,14 +78,10 @@
     sphinx-build -M html manual build
     ```
 
-<br>
-
-## Download API Document
-https://docs.blender.org/api/current/blender_python_reference_4_3.zip
 
 <br>
 
-## Building Developer Document
+### Developer Document
 1. Clone the repository
 
     ```bash
@@ -86,3 +102,5 @@ https://docs.blender.org/api/current/blender_python_reference_4_3.zip
     ```bash
     mkdocs build
     ```
+
+<br>
