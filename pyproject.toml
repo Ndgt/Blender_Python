@@ -2,9 +2,6 @@
 name = "blender-python"
 version = "0.1.0"
 description = "Add your description here"
-authors = [
-    { name = "Ndgt", email = "nadesubber2@gmail.com" }
-]
 dependencies = [
     "fake-bpy-module-4-2>=20241010",
 ]
