@@ -50,7 +50,7 @@ html_file_path = <path/to/blender_python_reference_4_3/index.html>
 webbrowser.open(html_file_path)
 ```
 
-We can run this module by `python -m document` after the venv activated.
+We can run this module by **`python -m document`** after the venv activated.
 
 <br>
 
